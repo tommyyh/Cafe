@@ -25,7 +25,7 @@ button {
    box-shadow: 2.5px 0px 8px 0px rgba(0, 0, 0, 0.1);
    padding-left: 2rem;
    padding-right: 2.5rem;
-   z-index: 1;
+   z-index: 6;
    background: #fff;
 }
 
@@ -69,9 +69,9 @@ button {
    width: 100%;
    height: 100vh;
    background: #EFEFEF;
-   z-index: -1;
    right: -100%;
    transition: ease 400ms;
+   z-index: 5;
 }
 
 .menu-burger a {
@@ -138,7 +138,7 @@ button {
    font-size: 3.7rem;
    color: #462816;
    font-weight: 500;
-   margin-top: 12.5rem;
+   margin-top: 11.5rem;
 }
 
 .lp p {
@@ -147,15 +147,126 @@ button {
 }
 
 .lp-button {
-   width: 11rem;
-   height: 3rem;
+   width: 12rem;
+   height: 3.5rem;
    background: #FCD5CE;
    border: 1px #FCD5CE solid;
    margin-top: 3rem;
+   font-size: 1.05rem;
 }
 
 .lp-img {
    width: 100%;
    height: 22rem;
    object-fit: cover;
+}
+
+/* About us section */
+.about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 37rem;
+   background: #EFEFEF;
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+
+.about h1 {
+   font-size: 4.5rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 4.9rem;
+}
+
+.about h3 {
+   font-family: 'Lobster Two', cursive;
+   color: #FFC1B6;
+   letter-spacing: 0.1rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 1.2rem;
+}
+
+.about-button {
+   width: 13.5rem;
+   height: 3.5rem;
+   background: #FCD5CE;
+   border: 1px #FCD5CE solid;
+   margin-top: 3rem;
+   font-size: 1.05rem;
+}
+
+.about p {
+   font-size: 0.9rem;
+   margin-top: 2rem;
+   line-height: 2.8rem;
+}
+
+/* What we do section */
+.section-4 {
+   margin-top: 10rem;
+}
+
+.wwd {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 40rem;
+   padding-left: 3.6rem;
+   padding-right: 0.65rem;
+}
+
+.wwd-img {
+   width: 80%;
+   height: 16rem;
+   object-fit: cover;
+   left: 50%;
+   transform: translate(-50%);
+   position: relative;
+   z-index: 1;
+}
+
+.wwd-rect {
+   width: 80%;
+   height: 49rem;
+   background: #EFEFEF;
+   position: absolute;
+   top: 275%;
+   z-index: -1;
+}
+
+.wwd h1 {
+   font-size: 3.5rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 4.9rem;
+}
+
+.wwd h3 {
+   font-family: 'Lobster Two', cursive;
+   color: #FFC1B6;
+   letter-spacing: 0.1rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 0.6rem;
+   margin-left: 0.5rem;
+}
+
+.wwd-text1 {
+   font-size: 0.9rem;
+   margin-top: 2rem;
+   line-height: 2.3rem;
+   margin-left: 0.5rem;
+}
+
+.wwd-text2 {
+   font-size: 0.9rem;
+   margin-top: 1.4rem;
+   line-height: 2.3rem;
+   margin-left: 0.5rem;
 }
