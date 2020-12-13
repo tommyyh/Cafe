@@ -1,0 +1,161 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Nunito', sans-serif;
+   line-height: 2.2rem;
+}
+
+button {
+   outline: none;
+   cursor: pointer;
+}
+
+/* Nav */
+.nav {
+   display: flex;
+   position: fixed;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 4.7rem;
+   box-shadow: 2.5px 0px 8px 0px rgba(0, 0, 0, 0.1);
+   padding-left: 2rem;
+   padding-right: 2.5rem;
+   z-index: 1;
+   background: #fff;
+}
+
+.nav h1{
+   font-family: 'Lobster Two', cursive;
+   font-size: 2rem;
+   font-weight: 500;
+}
+
+.burger-line {
+   background: #1b1a1a;
+   width: 1.7rem;
+   height: 0.2rem;
+   border-radius: 1rem;
+}
+
+.burger-line::after, .burger-line::before {
+   content: "";
+   position: absolute;
+   background: #1b1a1a;
+   width: 2.3rem;
+   height: 0.2rem;
+   border-radius: 1rem;
+   transition: ease 400ms;
+}
+
+.burger-line::after {
+   transform: translateY(0.6rem);
+}
+
+.burger-line::before {
+   transform: translateY(-0.6rem);
+}
+
+.menu-burger {
+   position: fixed;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   background: #EFEFEF;
+   z-index: -1;
+   right: -100%;
+   transition: ease 400ms;
+}
+
+.menu-burger a {
+   text-decoration: none;
+   color: #000;
+}
+
+.menu-burger li {
+   display: inline-block;
+   position: relative;
+   margin-top: 2.8rem;
+   font-size: 1.35rem;
+   padding-bottom: 0.3rem;
+}
+
+.menu-burger li::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 0.1rem;
+   background: #1b1a1a;
+   bottom: 0;
+   left: 0;
+   transform-origin: left;
+   transform: scale(0);
+   transition: 400ms;
+}
+
+.menu-burger li:hover::after {
+   transform: scale(1);
+}
+
+/* Nav - burger: Animation */
+.openB .burger-line::after {
+   transform: rotate(135deg);
+}
+
+.openB .burger-line::before {
+   transform: rotate(-135deg);
+}
+
+.openB .burger-line {
+   background: transparent;
+}
+
+.openM {
+   right: 0%;
+}
+
+/* Landing page */
+.lp {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 88vh;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+}
+
+.lp h1 {
+   font-family: 'Lobster Two', cursive;
+   font-size: 3.7rem;
+   color: #462816;
+   font-weight: 500;
+   margin-top: 12.5rem;
+}
+
+.lp p {
+   font-size: 0.9rem;
+   margin-top: 3.5rem;
+}
+
+.lp-button {
+   width: 11rem;
+   height: 3rem;
+   background: #FCD5CE;
+   border: 1px #FCD5CE solid;
+   margin-top: 3rem;
+}
+
+.lp-img {
+   width: 100%;
+   height: 22rem;
+   object-fit: cover;
+}
