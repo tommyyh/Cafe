@@ -270,3 +270,109 @@ button {
    line-height: 2.3rem;
    margin-left: 0.5rem;
 }
+
+/* Menu section */
+.section-5 {
+   margin-top: 11.5rem;
+}
+
+.menu-img {
+   width: 85%;
+   height: 21rem;
+   object-fit: cover;
+   left: 50%;
+   transform: translate(-50%);
+   position: relative;
+   z-index: 1;
+}
+
+.menu-rect {
+   width: 83%;
+   height: 24rem;
+   background: #EFEFEF;
+   position: absolute;
+   margin-top: 4em;
+   right: 0;
+   z-index: -1;
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 36rem;
+   padding-left: 2rem;
+   padding-right: 4rem;
+}
+
+.menu h1 {
+   font-size: 5rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 4.9rem;
+   letter-spacing: 0.1rem;
+}
+
+.menu h3 {
+   font-family: 'Lobster Two', cursive;
+   color: #FFC1B6;
+   letter-spacing: 0.1rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 1.3rem;
+   margin-left: 0.5rem;
+}
+
+.menu p {
+   font-size: 0.9rem;
+   margin-top: 1rem;
+   line-height: 2.8rem;
+   margin-left: 0.65rem;
+}
+
+.menu button {
+   width: 12.7rem;
+   height: 3.7rem;
+   background: #FCD5CE;
+   border: 1px #FCD5CE solid;
+   margin-top: 2rem;
+   margin-left: 0.5rem;
+   font-size: 1.05rem;
+}
+
+/* Reservation section */
+.section-6 {
+   margin-top: 5.2rem;
+}
+
+.reserv-img {
+   width: 100%;
+}
+
+.reserv {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 28rem;
+}
+
+.reserv h1 {
+   font-size: 4rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 3.4rem;
+   letter-spacing: 0.3rem;
+}
+
+.reserv-button {
+   width: 14rem;
+   height: 3.3rem;
+   background: #FCD5CE;
+   border: 1px #FCD5CE solid;
+   margin-top: 3rem;
+   margin-left: 0.5rem;
+   font-size: 1.10rem;
+}
