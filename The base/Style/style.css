@@ -14,6 +14,10 @@ button {
    cursor: pointer;
 }
 
+textarea {
+   resize: none;
+}
+
 /* Nav */
 .nav {
    display: flex;
@@ -326,7 +330,7 @@ button {
 
 .menu p {
    font-size: 0.9rem;
-   margin-top: 1rem;
+   margin-top: 1.4rem;
    line-height: 2.8rem;
    margin-left: 0.65rem;
 }
@@ -336,7 +340,7 @@ button {
    height: 3.7rem;
    background: #FCD5CE;
    border: 1px #FCD5CE solid;
-   margin-top: 2rem;
+   margin-top: 2.25rem;
    margin-left: 0.5rem;
    font-size: 1.05rem;
 }
@@ -491,4 +495,196 @@ button {
 .star {
    margin-top: 0.6rem;
    margin-left: 0.3rem;
+}
+
+/* Contact section */
+.section-9 {
+   margin-top: 11rem;
+}
+
+.contact-rect {
+   width: 100%;
+   height: 41rem;
+   background: #f5f4f4;
+   position: absolute;
+   z-index: -1;
+   margin-top: 3.4rem;
+}
+
+.contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 40.5rem;
+}
+
+.contact h1 {
+   font-size: 3.7rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 2rem;
+   letter-spacing: 0.3rem;
+}
+
+.contact h3 {
+   font-family: 'Lobster Two', cursive;
+   color: #FFC1B6;
+   letter-spacing: 0.1rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 1rem;
+}
+
+#c-name {
+   width: 19.6rem;
+   height: 3.5rem;
+   border: 1.4px rgb(36, 35, 35) solid;
+   margin-top: 2.5rem;
+   padding-left: 1.4rem;
+   outline: none;
+   padding-right: 1.4rem;
+}
+
+#c-name::placeholder {
+   color: #000;
+   font-size: 0.85rem;
+   font-weight: 500;
+   letter-spacing: 0.05rem;
+}
+
+#c-email{
+   width: 19.6rem;
+   height: 3.5rem;
+   border: 1.4px rgb(36, 35, 35) solid;
+   margin-top: 1.23rem;
+   padding-left: 1.4rem;
+   outline: none;
+   padding-right: 1.4rem;
+}
+
+#c-email::placeholder {
+   color: #000;
+   font-size: 0.85rem;
+   font-weight: 500;
+   letter-spacing: 0.05rem;
+}
+
+#c-msg {
+   width: 19.6rem;
+   height: 8rem;
+   border: 1.4px rgb(36, 35, 35) solid;
+   margin-top: 1.23rem;
+   padding-left: 1.4rem;
+   padding-right: 1.4rem;
+   padding-top: 0.9rem;
+   outline: none;
+}
+
+#c-msg::placeholder {
+   color: #000;
+   font-size: 0.90rem;
+   font-weight: 500;
+   letter-spacing: 0.05rem;
+   font-family: 'Nunito', sans-serif;
+}
+
+.c-button {
+   width: 13.5rem;
+   height: 3.4rem;
+   background: #FCD5CE;
+   border: 1px #FCD5CE solid;
+   margin-top: 2.7rem;
+   font-size: 1.05rem;
+}
+
+.socials {
+   margin-left: 1.95rem;
+}
+
+.c-twitter {
+   margin-left: 1rem;
+}
+
+.c-ig {
+   margin-left: 1rem;
+}
+
+/* Footer */
+.section-10 {
+   margin-top: 9rem;
+}
+
+.footer-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 20rem;
+   background: #EFEFEF;
+}
+
+.f-address {
+   font-size: 1.22rem;
+   margin-top: 3rem;
+   font-weight: 500;
+}
+
+.f-email {
+   font-size: 1.25rem;
+   margin-top: 1.9rem;
+   font-weight: 500;
+}
+
+.f-phone {
+   font-size: 1.25rem;
+   margin-top: 1.9rem;
+   font-weight: 500;
+}
+
+.footer-f {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   width: 100%;
+   height: 27.5rem;
+   background: #FFC4B9;
+}
+
+.go-back {
+   display: flex;
+   margin-top: 1.5rem;
+}
+
+.go-back a {
+   text-decoration: none;
+   color: #000;
+}
+
+.go-back2 {
+   font-size: 1.20rem;
+   margin-left: 0.5rem;
+   margin-top: 0.2rem;
+   font-weight: 600;
+}
+
+.f-img {
+   font-size: 1.25rem;
+   margin-top: 3.5rem;
+   font-weight: 600;
+}
+
+.f-icon {
+   font-size: 1.25rem;
+   margin-top: 1.9rem;
+   font-weight: 600;
+}
+
+.f-copy {
+   font-size: 1.25rem;
+   margin-top: 1.9rem;
+   font-weight: 600;
 }
