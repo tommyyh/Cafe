@@ -33,10 +33,14 @@ textarea {
    background: #fff;
 }
 
-.nav h1{
+.nav h1 {
    font-family: 'Lobster Two', cursive;
    font-size: 2rem;
    font-weight: 500;
+}
+
+.burger {
+   cursor: pointer;
 }
 
 .burger-line {
@@ -110,11 +114,11 @@ textarea {
 
 /* Nav - burger: Animation */
 .openB .burger-line::after {
-   transform: rotate(135deg);
+   transform: rotate(-45deg);
 }
 
 .openB .burger-line::before {
-   transform: rotate(-135deg);
+   transform: rotate(45deg);
 }
 
 .openB .burger-line {
@@ -131,6 +135,7 @@ textarea {
    flex-direction: column;
    align-items: center;
    text-align: center;
+   justify-content: center;
    width: 100%;
    height: 88vh;
    padding-left: 1.6rem;
@@ -142,7 +147,7 @@ textarea {
    font-size: 3.7rem;
    color: #462816;
    font-weight: 500;
-   margin-top: 11.5rem;
+   margin-top: 4rem;
 }
 
 .lp p {
@@ -239,8 +244,8 @@ textarea {
    height: 49rem;
    background: #EFEFEF;
    position: absolute;
-   top: 275%;
    z-index: -1;
+   margin-top: 8rem;
 }
 
 .wwd h1 {
