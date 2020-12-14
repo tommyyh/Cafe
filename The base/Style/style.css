@@ -785,6 +785,10 @@ textarea {
 }
 
 /* History */
+.section-a4 {
+   margin-top: 10.5rem;
+}
+
 .history-img {
    width: 83%;
    height: 22.5rem;
@@ -837,4 +841,141 @@ textarea {
    line-height: 2.30rem;
    margin-left: 0.65rem;
    margin-top: 1.3rem;
+}
+
+/* Staff section */
+.staff {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   margin-top: 5.7rem;
+}
+
+.staff-slope {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 77% 23%;
+   width: 88%;
+   height: 32rem;
+   margin-top: 6rem;
+}
+
+.staff-img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.staff-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   background: #EFEFEF;
+}
+
+.staff-info h1 {
+   font-size: 1.8rem;
+   letter-spacing: 0.17rem;
+   font-weight: 600;
+}
+
+.staff-info h3 {
+   font-size: 1.2rem;
+   letter-spacing: 0.17rem;
+   font-weight: 300;
+   color: #FFA190;
+   margin-top: 0.25rem;
+}
+
+/* Access section */
+.section-a6 {
+   margin-top: 11.7rem;
+}
+
+.access-img {
+   width: 85%;
+   height: 20.4rem;
+   left: 50%;
+   transform: translateX(-50%);
+   position: relative;
+}
+
+.access-rect {
+   width: 83%;
+   height: 43.6rem;
+   background: #EFEFEF;
+   position: absolute;
+   z-index: -1;
+   margin-top: 11.5rem;
+}
+
+.access {
+   display: flex;
+   flex-direction: column;
+   width: 83%;
+   height: 34rem;
+   padding-left: 2rem;
+}
+
+.access h1 {
+   font-size: 4.5rem;
+   font-family: 'Lobster Two', cursive;
+   font-weight: 500;
+   color: #462816;
+   margin-top: 3.7rem;
+}
+
+.access h3 {
+   font-family: 'Lobster Two', cursive;
+   color: #FFC1B6;
+   letter-spacing: 0.1rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   margin-top: 0.9rem;
+   margin-left: 0.5rem;
+}
+
+.access-open h2 {
+   font-size: 1.2rem;
+   margin-top: 2.6rem;
+   letter-spacing: 0.13rem; 
+}
+
+.access-open p {
+   font-size: 1.15rem;
+}
+
+.access-tel h2 {
+   font-size: 1.2rem;
+   margin-top: 2.6rem;
+   letter-spacing: 0.13rem; 
+}
+
+.access-tel p {
+   font-size: 1.15rem;
+}
+
+.access-address h2 {
+   font-size: 1.2rem;
+   margin-top: 2.6rem;
+   letter-spacing: 0.13rem; 
+}
+
+.access-address p {
+   font-size: 1.15rem;
+}
+
+/* Contact section */
+.section-a7 {
+   margin-top: 10.6rem;
+}
+
+/* Footer section */
+.section-a8 {
+   margin-top: 9rem;
 }
