@@ -6,3 +6,9 @@ burger.addEventListener("click", () => {
    burgerMenu.classList.toggle("openM");
    burger.classList.toggle("openB");
 });
+
+let navMenu = document.querySelector(".nav-menu");
+
+navMenu.addEventListener("click", () => {
+   navMenu.classList.toggle("menuClose");
+});
