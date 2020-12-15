@@ -134,6 +134,10 @@ textarea {
    right: 0%;
 }
 
+.nav-ul {
+   display: none;
+}
+
 /* Landing page */
 .lp {
    display: flex;
@@ -1171,4 +1175,1219 @@ textarea {
 /* Footer section */
 .section-r4 {
    margin-top: 10rem;
+}
+
+/* LAPTOP VERSION */
+@media screen and (min-width: 1025px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   
+   body {
+      font-family: 'Nunito', sans-serif;
+      line-height: 2.2rem;
+   }
+   
+   button {
+      outline: none;
+      cursor: pointer;
+   }
+   
+   textarea {
+      resize: none;
+   }
+   
+   /* Nav */
+   .nav {
+      display: flex;
+      position: fixed;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 4.7rem;
+      box-shadow: 3.3px 0px 8px 1px rgba(0, 0, 0, 0.1);
+      padding-left: 4.25rem;
+      padding-right: 1.75rem;
+      z-index: 6;
+      background: #fff;
+   }
+   
+   .nav h1 {
+      font-family: 'Lobster Two', cursive;
+      font-size: 2.25rem;
+      font-weight: 500;
+   }
+   
+   .nav a {
+      color: #000;
+      text-decoration: none;
+   }
+   
+   .burger {
+      cursor: pointer;
+      display: none;
+   }
+
+   .nav-ul {
+      display: block;
+   }
+
+   .nav-ul li {
+      display: inline-block;
+      margin-right: 2.7rem;
+      font-size: 1rem;
+   }
+
+   .nav-ul a {
+      color: #000;
+      text-decoration: none;
+   }
+   
+   .burger-line {
+      background: #1b1a1a;
+      width: 1.7rem;
+      height: 0.2rem;
+      border-radius: 1rem;
+   }
+   
+   .burger-line::after, .burger-line::before {
+      content: "";
+      position: absolute;
+      background: #1b1a1a;
+      width: 2.3rem;
+      height: 0.2rem;
+      border-radius: 1rem;
+      transition: ease 400ms;
+   }
+   
+   .burger-line::after {
+      transform: translateY(0.6rem);
+   }
+   
+   .burger-line::before {
+      transform: translateY(-0.6rem);
+   }
+   
+   .menu-burger {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background: #EFEFEF;
+      right: -100%;
+      transition: ease 400ms;
+      z-index: 5;
+   }
+   
+   .menu-burger a {
+      text-decoration: none;
+      color: #000;
+   }
+   
+   .menu-burger li {
+      display: inline-block;
+      position: relative;
+      margin-top: 2.8rem;
+      font-size: 1.35rem;
+      padding-bottom: 0.3rem;
+   }
+   
+   .menu-burger li::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.1rem;
+      background: #1b1a1a;
+      bottom: 0;
+      left: 0;
+      transform-origin: left;
+      transform: scale(0);
+      transition: 400ms;
+   }
+   
+   .menu-burger li:hover::after {
+      transform: scale(1);
+   }
+   
+   /* Nav - burger: Animation */
+   .openB .burger-line::after {
+      transform: rotate(-45deg);
+   }
+   
+   .openB .burger-line::before {
+      transform: rotate(45deg);
+   }
+   
+   .openB .burger-line {
+      background: transparent;
+   }
+   
+   .openM {
+      right: 0%;
+   }
+   
+   /* Landing page */
+   .lp {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      text-align: start;
+      justify-content: center;
+      width: 100%;
+      height: 84vh;
+      padding-left: 15rem;
+      padding-right: 25rem;
+   }
+   
+   .lp h1 {
+      font-family: 'Lobster Two', cursive;
+      font-size: 4rem;
+      color: #462816;
+      font-weight: 500;
+      margin-top: 4rem;
+   }
+   
+   .lp p {
+      font-size: 1.2rem;
+      margin-top: 3rem;
+      margin-left: 0.6rem;
+   }
+   
+   .lp-button {
+      width: 12rem;
+      height: 3.5rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 2.75rem;
+      margin-left: 0.6rem;
+      font-size: 1.05rem;
+   }
+   
+   .lp-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      z-index: -2;
+   }
+   
+   /* About us section */
+   .about {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      text-align: start;
+      width: 100%;
+      height: 37rem;
+      background: none;
+      padding-left: 24rem;
+      padding-right: 13rem;
+      margin-top: 28.5rem;
+   }
+   
+   .about h1 {
+      font-size: 5.2rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 4.9rem;
+      letter-spacing: 0.2rem;
+   }
+   
+   .about h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-left: 0rem;
+   }
+   
+   .about-button {
+      width: 13.5rem;
+      height: 3.85rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 3rem;
+      font-size: 1.05rem;
+      margin-left: 0.35rem;
+   }
+   
+   .about p {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      line-height: 2.8rem;
+      margin-left: 0.35rem;
+   }
+
+   .about-rect {
+      width: 31.4rem;
+      height: 28rem;
+      background: #EFEFEF;
+      position: absolute;
+      z-index: -1;
+      margin-top: 16.5rem;
+      margin-left: 3rem;
+   }
+   
+   /* What we do section */
+   .section-4 {
+      margin-top: 10rem;
+   }
+   
+   .wwd {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 40rem;
+      padding-left: 11.3rem;
+      padding-right: 13rem;
+   }
+   
+   .wwd-img {
+      width: 50%;
+      height: 26rem;
+      object-fit: cover;
+      right: 0%;
+      transform: translate(-0%);
+      position: relative;
+      z-index: -2;
+   }
+   
+   .wwd-rect {
+      width: 47%;
+      height: 52rem;
+      background: #EFEFEF;
+      position: absolute;
+      z-index: -1;
+      margin-top: 16rem;
+      margin-left: 20rem;
+   }
+   
+   .wwd h1 {
+      font-size: 5.2rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 4.9rem;
+      letter-spacing: 0.2rem;
+   }
+   
+   .wwd h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 2.2rem;
+      margin-left: 12.8rem;
+   }
+   
+   .wwd-text1 {
+      font-size: 1.2rem;
+      margin-top: 2.7rem;
+      line-height: 2.8rem;
+      margin-left: 12.8rem;
+   }
+   
+   .wwd-text2 {
+      font-size: 1.1rem;
+      margin-top: 1.7rem;
+      line-height: 2.8rem;
+      margin-left: 12.8rem;
+   }
+   
+   /* Menu section */
+   .section-5 {
+      margin-top: 11.5rem;
+   }
+   
+   .menu-img {
+      width: 85%;
+      height: 21rem;
+      object-fit: cover;
+      left: 50%;
+      transform: translate(-50%);
+      position: relative;
+      z-index: 1;
+   }
+   
+   .menu-rect {
+      width: 83%;
+      height: 24rem;
+      background: #EFEFEF;
+      position: absolute;
+      margin-top: 4em;
+      right: 0;
+      z-index: -1;
+   }
+   
+   .menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 36rem;
+      padding-left: 2rem;
+      padding-right: 4rem;
+   }
+   
+   .menu h1 {
+      font-size: 5rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 4.9rem;
+      letter-spacing: 0.1rem;
+   }
+   
+   .menu h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 1.3rem;
+      margin-left: 0.5rem;
+   }
+   
+   .menu p {
+      font-size: 0.9rem;
+      margin-top: 1.4rem;
+      line-height: 2.8rem;
+      margin-left: 0.65rem;
+   }
+   
+   .menu button {
+      width: 12.7rem;
+      height: 3.7rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 2.25rem;
+      margin-left: 0.5rem;
+      font-size: 1.05rem;
+   }
+   
+   /* Reservation section */
+   .section-6 {
+      margin-top: 5.2rem;
+   }
+   
+   .reserv-img {
+      width: 100%;
+   }
+   
+   .reserv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 28rem;
+   }
+   
+   .reserv h1 {
+      font-size: 4rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 3.4rem;
+      letter-spacing: 0.3rem;
+   }
+   
+   .reserv-button {
+      width: 14rem;
+      height: 3.3rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 3rem;
+      margin-left: 0.5rem;
+      font-size: 1.10rem;
+   }
+   
+   /* Our benefits section */
+   .section-7 {
+      margin-top: 10rem;
+   }
+   
+   .benefits {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 34rem;
+      padding-left: 1.5rem;
+      padding-right: 4rem;
+   }
+   
+   .benefits-img {
+      width: 84%;
+      height: 17.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+      object-fit: cover;
+   }
+   
+   .benefits-rect {
+      width: 72%;
+      height: 44rem;
+      background: #EFEFEF;
+      position: absolute;
+      right: 0;
+      margin-top: 8rem;
+      z-index: -1;
+   }
+   
+   .benefits h1 {
+      font-size: 3.8rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 5rem;
+   }
+   
+   .benefits h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-left: 0.5rem;
+   }
+   
+   .benefits p {
+      font-size: 0.9rem;
+      margin-top: 1.7rem;
+      line-height: 2.5rem;
+      margin-left: 0.65rem;
+   }
+   
+   .benefits-button {
+      width: 13.5rem;
+      height: 3.4rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 2.3rem;
+      margin-left: 0.5rem;
+      font-size: 1.05rem;
+   }
+   
+   /* Our Reviews section */
+   .reviews {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 37rem;
+      background: #EFEFEF;
+      margin-top: 10rem;
+      padding-left: 2.3rem;
+      padding-right: 2.3rem;
+   }
+   
+   .reviews h1 {
+      font-size: 3.8rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 4.5rem;
+   }
+   
+   .reviews-text {
+      font-size: 0.9rem;
+      margin-top: 1.7rem;
+      line-height: 2.5rem;
+   }
+   
+   .reviews-sign {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 1.7rem;
+   }
+   
+   .reviews h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 1.2rem;
+   }
+   
+   .star {
+      margin-top: 0.6rem;
+      margin-left: 0.3rem;
+   }
+   
+   /* Contact section */
+   .section-9 {
+      margin-top: 11rem;
+   }
+   
+   .contact-rect {
+      width: 100%;
+      height: 41rem;
+      background: #f5f4f4;
+      position: absolute;
+      z-index: -1;
+      margin-top: 3.4rem;
+   }
+   
+   .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 40.5rem;
+   }
+   
+   .contact h1 {
+      font-size: 3.7rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 2rem;
+      letter-spacing: 0.3rem;
+   }
+   
+   .contact h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+   }
+   
+   #c-name {
+      width: 19.6rem;
+      height: 3.5rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      margin-top: 2.5rem;
+      padding-left: 1.4rem;
+      outline: none;
+      padding-right: 1.4rem;
+   }
+   
+   #c-name::placeholder {
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+   }
+   
+   #c-email{
+      width: 19.6rem;
+      height: 3.5rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      margin-top: 1.23rem;
+      padding-left: 1.4rem;
+      outline: none;
+      padding-right: 1.4rem;
+   }
+   
+   #c-email::placeholder {
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+   }
+   
+   #c-msg {
+      width: 19.6rem;
+      height: 8rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      margin-top: 1.23rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      padding-top: 0.9rem;
+      outline: none;
+   }
+   
+   #c-msg::placeholder {
+      color: #000;
+      font-size: 0.90rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+      font-family: 'Nunito', sans-serif;
+   }
+   
+   .c-button {
+      width: 13.5rem;
+      height: 3.4rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      margin-top: 2.7rem;
+      font-size: 1.05rem;
+   }
+   
+   .socials {
+      margin-left: 1.95rem;
+   }
+   
+   .c-twitter {
+      margin-left: 1rem;
+   }
+   
+   .c-ig {
+      margin-left: 1rem;
+   }
+   
+   /* Footer */
+   .section-10 {
+      margin-top: 9rem;
+   }
+   
+   .footer-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 20rem;
+      background: #EFEFEF;
+   }
+   
+   .f-address {
+      font-size: 1.22rem;
+      margin-top: 3rem;
+      font-weight: 500;
+   }
+   
+   .f-email {
+      font-size: 1.25rem;
+      margin-top: 1.9rem;
+      font-weight: 500;
+   }
+   
+   .f-phone {
+      font-size: 1.25rem;
+      margin-top: 1.9rem;
+      font-weight: 500;
+   }
+   
+   .footer-f {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 27.5rem;
+      background: #FFC4B9;
+   }
+   
+   .go-back {
+      display: flex;
+      margin-top: 1.5rem;
+   }
+   
+   .go-back a {
+      text-decoration: none;
+      color: #000;
+   }
+   
+   .go-back2 {
+      font-size: 1.20rem;
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      font-weight: 600;
+   }
+   
+   .f-img {
+      font-size: 1.25rem;
+      margin-top: 3.5rem;
+      font-weight: 600;
+   }
+   
+   .f-icon {
+      font-size: 1.25rem;
+      margin-top: 1.9rem;
+      font-weight: 600;
+   }
+   
+   .f-copy {
+      font-size: 1.25rem;
+      margin-top: 1.9rem;
+      font-weight: 600;
+   }
+   
+   /* ABOUT US PAGE */
+   /* Landing page */
+   .a-lp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      padding-left: 2.3rem;
+      padding-right: 2.3rem;
+   }
+   
+   .a-lp h1 {
+      font-size: 5rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 3rem;
+   }
+   
+   .a-lp p {
+      font-size: 0.9rem;
+      margin-top: 1.85rem;
+      line-height: 2.30rem;
+      margin-left: 0.65rem;
+      margin-top: 2.7rem;
+   }
+   
+   .a-scroll {
+      margin-top: 2rem;
+   }
+   
+   /* Beanery section */
+   .beanery {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 26rem;
+      padding-left: 1.7rem;
+      padding-right: 1.1rem;
+   }
+   
+   .beanery-rect {
+      width: 100%;
+      height: 22rem;
+      background: #EFEFEF;
+      position: absolute;
+      z-index: -1;
+      margin-top: 4.7rem;
+   }
+   
+   .beanery h1 {
+      font-size: 4.5rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 3rem;
+   }
+   
+   .beanery h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.7rem;
+      margin-left: 0.5rem;
+   }
+   
+   .beanery-text1 {
+      font-size: 0.9rem;
+      margin-top: 1.4rem;
+      line-height: 2.26rem;
+      margin-left: 0.5rem;
+   }
+   
+   .beanery-text2 {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      line-height: 2.26rem;
+      margin-left: 0.5rem;
+   }
+   
+   /* History */
+   .section-a4 {
+      margin-top: 10.5rem;
+   }
+   
+   .history-img {
+      width: 83%;
+      height: 22.5rem;
+      object-fit: cover;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+   }
+   
+   .history {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 24rem;
+      padding-left: 2rem;
+      padding-right: 1.9rem;
+   }
+   
+   .history-rect {
+      width: 73%;
+      height: 33rem;
+      background: #EFEFEF;
+      position: absolute;
+      z-index: -1;
+      right: 0%;
+      margin-top: 14rem;
+   }
+   
+   .history h1 {
+      font-size: 4.5rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 4rem;
+   }
+   
+   .history h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.9rem;
+      margin-left: 0.5rem;
+   }
+   
+   .history p {
+      font-size: 0.9rem;
+      margin-top: 1.85rem;
+      line-height: 2.30rem;
+      margin-left: 0.65rem;
+      margin-top: 1.3rem;
+   }
+   
+   /* Staff section */
+   .staff {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-top: 5.7rem;
+   }
+   
+   .staff-slope {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 77% 23%;
+      width: 88%;
+      height: 32rem;
+      margin-top: 6rem;
+   }
+   
+   .staff-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   
+   .staff-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: #EFEFEF;
+   }
+   
+   .staff-info h1 {
+      font-size: 1.8rem;
+      letter-spacing: 0.17rem;
+      font-weight: 600;
+   }
+   
+   .staff-info h3 {
+      font-size: 1.2rem;
+      letter-spacing: 0.17rem;
+      font-weight: 300;
+      color: #FFA190;
+      margin-top: 0.25rem;
+   }
+   
+   /* Access section */
+   .section-a6 {
+      margin-top: 11.7rem;
+   }
+   
+   .access-img {
+      width: 85%;
+      height: 20.4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+   }
+   
+   .access-rect {
+      width: 83%;
+      height: 43.6rem;
+      background: #EFEFEF;
+      position: absolute;
+      z-index: -1;
+      margin-top: 11.5rem;
+   }
+   
+   .access {
+      display: flex;
+      flex-direction: column;
+      width: 83%;
+      height: 34rem;
+      padding-left: 2rem;
+   }
+   
+   .access h1 {
+      font-size: 4.5rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 3.7rem;
+   }
+   
+   .access h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.9rem;
+      margin-left: 0.5rem;
+   }
+   
+   .access-open h2 {
+      font-size: 1.2rem;
+      margin-top: 2.6rem;
+      letter-spacing: 0.13rem; 
+   }
+   
+   .access-open p {
+      font-size: 1.15rem;
+   }
+   
+   .access-tel h2 {
+      font-size: 1.2rem;
+      margin-top: 2.6rem;
+      letter-spacing: 0.13rem; 
+   }
+   
+   .access-tel p {
+      font-size: 1.15rem;
+   }
+   
+   .access-address h2 {
+      font-size: 1.2rem;
+      margin-top: 2.6rem;
+      letter-spacing: 0.13rem; 
+   }
+   
+   .access-address p {
+      font-size: 1.15rem;
+   }
+   
+   /* Contact section */
+   .section-a7 {
+      margin-top: 10.6rem;
+   }
+   
+   /* Footer section */
+   .section-a8 {
+      margin-top: 9rem;
+   }
+   
+   /* CONTACT US PAGE */
+   /* Landing page section */
+   .c-lp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 88vh;
+      padding-left: 3rem;
+      padding-right: 3rem;
+   }
+   
+   .c-lp h1 {
+      font-family: 'Lobster Two', cursive;
+      font-size: 3.7rem;
+      color: #462816;
+      font-weight: 500;
+      margin-top: 4rem;
+      letter-spacing: 0.25rem;
+   }
+   
+   .c-lp p {
+      font-size: 0.9rem;
+      margin-top: 2.7rem;
+   }
+   
+   .c-scroll {
+      margin-top: 2.1rem;
+   }
+   
+   .c-lp-img {
+      object-fit: cover;
+      width: 100%;
+      height: 18rem;
+   }
+   
+   /* Contact section */
+   .section-c3 {
+      margin-top: 8rem;
+   }
+   
+   .section-c4 {
+      margin-top: 9rem;
+   }
+   
+   /* RESERVATION PAGE */
+   /* Landing page */
+   .r-lp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      padding-left: 3rem;
+      padding-right: 3rem;
+   }
+   
+   .r-lp-img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
+      z-index: -1;
+   }
+   
+   .r-lp h1 {
+      font-family: 'Lobster Two', cursive;
+      font-size: 4rem;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.25rem;
+      margin-top: 3rem;
+   }
+   
+   .r-lp p {
+      font-size: 0.8rem;
+      font-weight: lighter;
+      margin-top: 2.9rem;
+      color: #fff;
+      letter-spacing: 0.1rem;
+   }
+   
+   .r-scroll {
+      margin-top: 2.4rem;
+   }
+   
+   /* Reservation section */
+   .reservation {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 38rem;
+      margin-top: 5rem;
+   }
+   
+   .reservation-rect {
+      width: 100%;
+      height: 30rem;
+      position: absolute;
+      z-index: -1;
+      background: #EFEFEF;
+      margin-top: 5.5rem;
+   }
+   
+   .reservation h1 {
+      font-size: 4rem;
+      font-family: 'Lobster Two', cursive;
+      font-weight: 500;
+      color: #462816;
+      margin-top: 3.7rem;
+      letter-spacing: 0.2rem;
+   }
+   
+   .reservation h3 {
+      font-family: 'Lobster Two', cursive;
+      color: #FFC1B6;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin-top: 0.9rem;
+      margin-left: 0.5rem;
+   }
+   
+   #reservation-date {
+      width: 85%;
+      height: 3.25rem;
+      margin-top: 3rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      outline: none;
+   }
+   
+   #reservation-date::placeholder {
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+   }
+   
+   #reservation-time {
+      width: 85%;
+      height: 3.25rem;
+      margin-top: 1.60rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      outline: none;
+   }
+   
+   #reservation-time::placeholder {
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+   }
+   
+   #reservation-people {
+      width: 85%;
+      height: 3.25rem;
+      margin-top: 1.60rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      border: 1.4px rgb(36, 35, 35) solid;
+      outline: none;
+   }
+   
+   #reservation-people::placeholder {
+      color: #000;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.05rem;
+   }
+   
+   .reservation-button {
+      width: 50%;
+      height: 3.25rem;
+      margin-top: 3.25rem;
+      background: #FCD5CE;
+      border: 1px #FCD5CE solid;
+      font-size: 1rem;
+   }
+   
+   /* Footer section */
+   .section-r4 {
+      margin-top: 10rem;
+   }
 }
