@@ -1755,24 +1755,26 @@ input::-webkit-inner-spin-button {
    }
    
    .contact-rect {
-      width: 100%;
-      height: 41rem;
+      width: 42%;
+      height: 42.8rem;
       background: #f5f4f4;
       position: absolute;
       z-index: -1;
-      margin-top: 3.4rem;
+      margin-top: 0rem;
    }
    
    .contact {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: baseline;
+      justify-content: center;
       width: 100%;
-      height: 40.5rem;
+      height: 41rem;
+      padding-left: 5rem;
    }
    
    .contact h1 {
-      font-size: 3.7rem;
+      font-size: 5.2rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
@@ -1786,17 +1788,19 @@ input::-webkit-inner-spin-button {
       letter-spacing: 0.1rem;
       font-weight: 500;
       font-size: 1.2rem;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      margin-left: 0.5rem;
    }
    
    #c-name {
-      width: 19.6rem;
+      width: 46.5rem;
       height: 3.5rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 2.5rem;
       padding-left: 1.4rem;
       outline: none;
       padding-right: 1.4rem;
+      margin-left: 0.5rem;
    }
    
    #c-name::placeholder {
@@ -1807,13 +1811,14 @@ input::-webkit-inner-spin-button {
    }
    
    #c-email{
-      width: 19.6rem;
+      width: 46.5rem;
       height: 3.5rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 1.23rem;
       padding-left: 1.4rem;
       outline: none;
       padding-right: 1.4rem;
+      margin-left: 0.5rem;
    }
    
    #c-email::placeholder {
@@ -1824,7 +1829,7 @@ input::-webkit-inner-spin-button {
    }
    
    #c-msg {
-      width: 19.6rem;
+      width: 46.5rem;
       height: 8rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 1.23rem;
@@ -1832,6 +1837,7 @@ input::-webkit-inner-spin-button {
       padding-right: 1.4rem;
       padding-top: 0.9rem;
       outline: none;
+      margin-left: 0.5rem;
    }
    
    #c-msg::placeholder {
@@ -1847,20 +1853,31 @@ input::-webkit-inner-spin-button {
       height: 3.4rem;
       background: #FCD5CE;
       border: 1px #FCD5CE solid;
-      margin-top: 2.7rem;
+      margin-top: 3.2rem;
       font-size: 1.05rem;
+      margin-left: 0.5rem;
    }
    
    .socials {
-      margin-left: 1.95rem;
+      position: absolute;
+      right: 1.8%;
    }
    
    .c-twitter {
       margin-left: 1rem;
+      width: 1.25rem;
+      height: 1.25rem;
    }
    
    .c-ig {
       margin-left: 1rem;
+      width: 1.25rem;
+      height: 1.25rem;
+   }
+
+   .c-fb {
+      height: 1.25rem;
+      width: 0.9rem;
    }
    
    /* Footer */
@@ -1874,25 +1891,25 @@ input::-webkit-inner-spin-button {
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 20rem;
+      height: 22rem;
       background: #EFEFEF;
    }
    
    .f-address {
-      font-size: 1.22rem;
+      font-size: 1.45rem;
       margin-top: 3rem;
       font-weight: 500;
    }
    
    .f-email {
-      font-size: 1.25rem;
-      margin-top: 1.9rem;
+      font-size: 1.45rem;
+      margin-top: 2.7rem;
       font-weight: 500;
    }
    
    .f-phone {
-      font-size: 1.25rem;
-      margin-top: 1.9rem;
+      font-size: 1.45rem;
+      margin-top: 2.7rem;
       font-weight: 500;
    }
    
@@ -1902,13 +1919,13 @@ input::-webkit-inner-spin-button {
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 27.5rem;
+      height: 25rem;
       background: #FFC4B9;
    }
    
    .go-back {
       display: flex;
-      margin-top: 1.5rem;
+      margin-top: 2.25rem;
    }
    
    .go-back a {
