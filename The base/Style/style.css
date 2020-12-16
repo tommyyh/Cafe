@@ -3624,8 +3624,8 @@ input::-webkit-inner-spin-button {
       text-align: center;
       width: 100%;
       height: 100vh;
-      padding-left: 15rem;
-      padding-right: 15rem;
+      padding-left: 9%;
+      padding-right: 9%;
    }
    
    .r-lp-img {
@@ -3638,7 +3638,7 @@ input::-webkit-inner-spin-button {
    
    .r-lp h1 {
       font-family: 'Lobster Two', cursive;
-      font-size: 6.8rem;
+      font-size: 7.3rem;
       color: #fff;
       font-weight: 500;
       letter-spacing: 0.25rem;
@@ -3646,15 +3646,17 @@ input::-webkit-inner-spin-button {
    }
    
    .r-lp p {
-      font-size: 1.12rem;
+      font-size: 1.38rem;
       font-weight: lighter;
-      margin-top: 4.3rem;
+      margin-top: 5.6rem;
       color: #fff;
       letter-spacing: 0.1rem;
+      line-height: 2.7rem;
    }
    
    .r-scroll {
-      margin-top: 3rem;
+      margin-top: 4rem;
+      width: 2.65rem;
    }
    
    /* Reservation section */
@@ -3668,7 +3670,7 @@ input::-webkit-inner-spin-button {
    }
    
    .reservation-rect {
-      width: 70%;
+      width: 83%;
       height: 30.8rem;
       position: absolute;
       z-index: -1;
@@ -3679,7 +3681,7 @@ input::-webkit-inner-spin-button {
    }
    
    .reservation h1 {
-      font-size: 6rem;
+      font-size: 6.6rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
@@ -3692,13 +3694,13 @@ input::-webkit-inner-spin-button {
       color: #FFC1B6;
       letter-spacing: 0.1rem;
       font-weight: 500;
-      font-size: 1.2rem;
-      margin-top: 2rem;
+      font-size: 1.4rem;
+      margin-top: 2.35rem;
       margin-left: 0.5rem;
    }
    
    #reservation-date {
-      width: 50%;
+      width: 70%;
       height: 3.25rem;
       margin-top: 3rem;
       padding-left: 1.4rem;
@@ -3709,15 +3711,15 @@ input::-webkit-inner-spin-button {
    
    #reservation-date::placeholder {
       color: #000;
-      font-size: 0.85rem;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
    }
    
    #reservation-time {
-      width: 50%;
+      width: 70%;
       height: 3.25rem;
-      margin-top: 1.60rem;
+      margin-top: 1.874rem;
       padding-left: 1.4rem;
       padding-right: 1.4rem;
       border: 1.4px rgb(36, 35, 35) solid;
@@ -3726,15 +3728,15 @@ input::-webkit-inner-spin-button {
    
    #reservation-time::placeholder {
       color: #000;
-      font-size: 0.85rem;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
    }
    
    #reservation-people {
-      width: 50%;
+      width: 70%;
       height: 3.25rem;
-      margin-top: 1.60rem;
+      margin-top: 1.74rem;
       padding-left: 1.4rem;
       padding-right: 1.4rem;
       border: 1.4px rgb(36, 35, 35) solid;
@@ -3743,18 +3745,18 @@ input::-webkit-inner-spin-button {
    
    #reservation-people::placeholder {
       color: #000;
-      font-size: 0.85rem;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
    }
    
    .reservation-button {
-      width: 12.5rem;
-      height: 3.25rem;
+      width: 13rem;
+      height: 3.6rem;
       margin-top: 3.25rem;
       background: #FCD5CE;
       border: 1px #FCD5CE solid;
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
    
    /* Footer section */
