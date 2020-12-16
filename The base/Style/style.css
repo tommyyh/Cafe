@@ -3575,13 +3575,13 @@ input::-webkit-inner-spin-button {
       text-align: center;
       width: 100%;
       height: 88vh;
-      padding-left: 18rem;
-      padding-right: 18rem;
+      padding-left: 9%;
+      padding-right: 9%;
    }
    
    .c-lp h1 {
       font-family: 'Lobster Two', cursive;
-      font-size: 6.8rem;
+      font-size: 7rem;
       color: #462816;
       font-weight: 500;
       margin-top: 4rem;
@@ -3589,12 +3589,14 @@ input::-webkit-inner-spin-button {
    }
    
    .c-lp p {
-      font-size: 1.12rem;
-      margin-top: 4rem;
+      font-size: 1.3rem;
+      line-height: 2.7rem;
+      margin-top: 5.5rem;
    }
    
    .c-scroll {
-      margin-top: 2.1rem;
+      margin-top: 3rem;
+      width: 2.75rem;
    }
    
    .c-lp-img {
@@ -3605,11 +3607,11 @@ input::-webkit-inner-spin-button {
    
    /* Contact section */
    .section-c3 {
-      margin-top: 8rem;
+      margin-top: 9rem;
    }
    
    .section-c4 {
-      margin-top: 9rem;
+      margin-top: 15rem;
    }
    
    /* RESERVATION PAGE */
