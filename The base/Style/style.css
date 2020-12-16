@@ -2715,11 +2715,11 @@ input::-webkit-inner-spin-button {
 
    .about-rect {
       width: 25rem;
-      height: 29rem;
+      height: 22rem;
       background: #EFEFEF;
       position: absolute;
       z-index: -1;
-      margin-top: 27%;
+      margin-top: 34%;
       margin-left: 3rem;
    }
    
@@ -2792,12 +2792,12 @@ input::-webkit-inner-spin-button {
    
    /* Menu section */
    .section-5 {
-      margin-top: 15rem;
+      margin-top: 26rem;
    }
    
    .menu-img {
-      width: 40%;
-      height: 24rem;
+      width: 50%;
+      height: 27rem;
       object-fit: cover;
       left: 0%;
       transform: translate(0%);
@@ -2806,13 +2806,13 @@ input::-webkit-inner-spin-button {
    }
    
    .menu-rect {
-      width: 58%;
-      height: 25.5rem;
+      width: 80%;
+      height: 29rem;
       background: #EFEFEF;
       position: absolute;
-      margin-top: 7.8rem;
+      margin-top: 5rem;
       margin-left: 20rem;
-      right: auto;
+      right: 0;
       z-index: -1;
    }
    
@@ -2821,16 +2821,16 @@ input::-webkit-inner-spin-button {
       flex-direction: column;
       width: 100%;
       height: 36rem;
-      padding-left: 24rem;
-      padding-right: 6.5rem;
+      padding-left: 28%;
+      padding-right: 5%;
    }
    
    .menu h1 {
-      font-size: 5.6rem;
+      font-size: 6rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
-      margin-top: 12.5rem;
+      margin-top: 11rem;
       letter-spacing: 0.1rem;
    }
    
@@ -2839,7 +2839,7 @@ input::-webkit-inner-spin-button {
       color: #FFC1B6;
       letter-spacing: 0.1rem;
       font-weight: 500;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       margin-top: 1.4rem;
       margin-left: 0.5rem;
    }
@@ -2852,11 +2852,11 @@ input::-webkit-inner-spin-button {
    }
    
    .menu button {
-      width: 12.7rem;
-      height: 3.7rem;
+      width: 13rem;
+      height: 4rem;
       background: #FCD5CE;
       border: 1px #FCD5CE solid;
-      margin-top: 2.8rem;
+      margin-top: 2rem;
       margin-left: 0.55rem;
       font-size: 1.05rem;
    }
@@ -2867,21 +2867,22 @@ input::-webkit-inner-spin-button {
    }
    
    .reserv-img {
-      width: 56%;
-      height: 28rem;
+      width: 82%;
+      height: 23rem;
       position: absolute;
-      right: 7%;
+      left: 50%;
       object-fit: cover;
+      transform: translateX(-50%);
       z-index: -1;
    }
    
    .reserv {
       display: flex;
       flex-direction: column;
-      align-items: baseline;
+      align-items: center;
       width: 100%;
-      height: 28rem;
-      padding-left: 7rem;
+      height: 100%;
+      padding-left: 0%;
    }
    
    .reserv h1 {
@@ -2889,16 +2890,16 @@ input::-webkit-inner-spin-button {
       font-family: 'Lobster Two', cursive;
       font-weight: 600;
       color: #462816;
-      margin-top: 8.25rem;
+      margin-top: 28rem;
       letter-spacing: 0.55rem;
    }
    
    .reserv-button {
       width: 14rem;
-      height: 3.3rem;
+      height: 4.1rem;
       background: #FCD5CE;
       border: 1px #FCD5CE solid;
-      margin-top: 5rem;
+      margin-top: 4.4rem;
       margin-left: 0.5rem;
       font-size: 1.10rem;
    }
@@ -2912,22 +2913,22 @@ input::-webkit-inner-spin-button {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 70%;
+      width: 100%;
       height: 34rem;
-      padding-left: 4.5rem;
-      padding-right: 24rem;
+      padding-left: 5%;
+      padding-right: 5%;
       background: #EFEFEF;
    }
    
    .benefits-img {
-      width: 52%;
-      height: 30rem;
+      width: 51%;
+      height: 23rem;
       left: auto;
       transform: translateX(0%);
       position: absolute;
       object-fit: cover;
       right: 0%;
-      margin-top: 10rem;
+      margin-top: 26rem;
    }
    
    .benefits-rect {
@@ -2970,6 +2971,10 @@ input::-webkit-inner-spin-button {
    }
    
    /* Our Reviews section */
+   .section-8 {
+      margin-top: 29rem;
+   }  
+
    .reviews {
       display: flex;
       flex-direction: column;
@@ -2978,13 +2983,12 @@ input::-webkit-inner-spin-button {
       width: 100%;
       height: 30rem;
       background: none;
-      margin-top: 18.7rem;
-      padding-left: 20rem;
-      padding-right: 2.3rem;
+      padding-left: 24%;
+      padding-right: 6%;
    }
 
    .reviews-rect {
-      width: 80%;
+      width: 85%;
       height: 25.7rem;
       background: #EFEFEF;
       position: absolute;
@@ -3036,7 +3040,7 @@ input::-webkit-inner-spin-button {
    }
    
    .contact-rect {
-      width: 42%;
+      width: 72%;
       height: 42.8rem;
       background: #f5f4f4;
       position: absolute;
@@ -3074,7 +3078,7 @@ input::-webkit-inner-spin-button {
    }
    
    #c-name {
-      width: 63%;
+      width: 83%;
       height: 3.5rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 2.5rem;
@@ -3086,13 +3090,13 @@ input::-webkit-inner-spin-button {
    
    #c-name::placeholder {
       color: #000;
-      font-size: 0.85rem;
+      font-size: 0.97rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
    }
    
    #c-email{
-      width: 63%;
+      width: 83%;
       height: 3.5rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 1.23rem;
@@ -3104,13 +3108,13 @@ input::-webkit-inner-spin-button {
    
    #c-email::placeholder {
       color: #000;
-      font-size: 0.85rem;
+      font-size: 0.97rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
    }
    
    #c-msg {
-      width: 63%;
+      width: 83%;
       height: 8rem;
       border: 1.4px rgb(36, 35, 35) solid;
       margin-top: 1.23rem;
@@ -3123,19 +3127,19 @@ input::-webkit-inner-spin-button {
    
    #c-msg::placeholder {
       color: #000;
-      font-size: 0.90rem;
+      font-size: 0.97rem;
       font-weight: 500;
       letter-spacing: 0.05rem;
       font-family: 'Nunito', sans-serif;
    }
    
    .c-button {
-      width: 13.5rem;
-      height: 3.4rem;
+      width: 14rem;
+      height: 3.8rem;
       background: #FCD5CE;
       border: 1px #FCD5CE solid;
       margin-top: 3.2rem;
-      font-size: 1.05rem;
+      font-size: 1.20rem;
       margin-left: 0.5rem;
    }
    
@@ -3146,18 +3150,18 @@ input::-webkit-inner-spin-button {
    
    .c-twitter {
       margin-left: 1rem;
-      width: 1.25rem;
+      width: 1.35rem;
       height: 1.25rem;
    }
    
    .c-ig {
       margin-left: 1rem;
-      width: 1.25rem;
+      width: 1.35rem;
       height: 1.25rem;
    }
 
    .c-fb {
-      height: 1.25rem;
+      height: 1.35rem;
       width: 0.9rem;
    }
    
