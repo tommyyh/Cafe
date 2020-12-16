@@ -3204,7 +3204,7 @@ input::-webkit-inner-spin-button {
       align-items: center;
       text-align: center;
       width: 100%;
-      height: 25rem;
+      height: 29rem;
       background: #FFC4B9;
    }
    
@@ -3219,27 +3219,27 @@ input::-webkit-inner-spin-button {
    }
    
    .go-back2 {
-      font-size: 1.20rem;
+      font-size: 1.4rem;
       margin-left: 0.5rem;
       margin-top: 0.2rem;
       font-weight: 600;
    }
    
    .f-img {
-      font-size: 1.25rem;
+      font-size: 1.49rem;
       margin-top: 3.5rem;
       font-weight: 600;
    }
    
    .f-icon {
-      font-size: 1.25rem;
-      margin-top: 1.9rem;
+      font-size: 1.49rem;
+      margin-top: 2.85rem;
       font-weight: 600;
    }
    
    .f-copy {
-      font-size: 1.25rem;
-      margin-top: 1.9rem;
+      font-size: 1.49rem;
+      margin-top: 2.85rem;
       font-weight: 600;
    }
    
@@ -3253,12 +3253,12 @@ input::-webkit-inner-spin-button {
       text-align: center;
       width: 100%;
       height: 100vh;
-      padding-left: 15rem;
-      padding-right: 15rem;
+      padding-left: 12%;
+      padding-right: 12%;
    }
    
    .a-lp h1 {
-      font-size: 6.34rem;
+      font-size: 7.4rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
@@ -3267,14 +3267,15 @@ input::-webkit-inner-spin-button {
    }
    
    .a-lp p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       line-height: 2.8rem;
-      margin-top: 3.5rem;
+      margin-top: 6.5rem;
       letter-spacing: 0.04rem;
    }
    
    .a-scroll {
-      margin-top: 2.60rem;
+      margin-top: 4rem;
+      width: 3rem;
    }
    
    /* Beanery section */
@@ -3284,11 +3285,11 @@ input::-webkit-inner-spin-button {
       width: 100%;
       height: 26rem;
       padding-left: 5rem;
-      padding-right: 50rem;
+      padding-right: 5%;
    }
    
    .beanery-rect {
-      width: 79%;
+      width: 100%;
       height: 22rem;
       background: #EFEFEF;
       position: absolute;
@@ -3297,7 +3298,7 @@ input::-webkit-inner-spin-button {
    }
    
    .beanery h1 {
-      font-size: 6rem;
+      font-size: 6.4rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
@@ -3310,46 +3311,46 @@ input::-webkit-inner-spin-button {
       color: #FFC1B6;
       letter-spacing: 0.1rem;
       font-weight: 500;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       margin-top: 1.8rem;
       margin-left: 0.6rem;
    }
    
    .beanery-text1 {
-      font-size: 1.2rem;
-      margin-top: 1.9rem;
+      font-size: 1.3rem;
+      margin-top: 2.2rem;
       line-height: 2.8rem;
-      margin-left: 0.7rem;
+      margin-left: 0.88rem;
    }
    
    .beanery-text2 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 1.3rem;
       line-height: 2.8rem;
-      margin-left: 0.7rem;
+      margin-left: 0.88rem;
    }
 
    .history-img-d {
-      display: block;
+      display: none;
       position: absolute;
       right: 14%;
-      margin-top: 9rem;
-      z-index: -1;
+      margin-top: 25rem;
+      z-index: -3;
    }
    
    /* History */
    .section-a4 {
-      margin-top: 8.5rem;
+      margin-top: 14rem;
    }
    
    .history-img {
       width: 83%;
-      height: 22.5rem;
+      height: 25rem;
       object-fit: cover;
       left: 50%;
       transform: translateX(-50%);
       position: relative;
-      display: none;
+      display: block;
    }
    
    .history {
@@ -3357,9 +3358,9 @@ input::-webkit-inner-spin-button {
       flex-direction: column;
       width: 100%;
       height: 24rem;
-      padding-left: 17.6rem;
-      padding-right: 14rem;
-      margin-top: 23rem;
+      padding-left: 19%;
+      padding-right: 22%;
+      margin-top: 7%;
    }
 
    .history-rect-d {
@@ -3369,25 +3370,25 @@ input::-webkit-inner-spin-button {
       position: absolute;
       z-index: -1;
       right: 7.6%;
+      display: none;
    }
    
    .history-rect {
-      width: 73%;
-      height: 33rem;
+      width: 65%;
+      height: 47rem;
       background: #EFEFEF;
       position: absolute;
       z-index: -1;
       right: 0%;
       margin-top: 14rem;
-      display: none;
    }
    
    .history h1 {
-      font-size: 6rem;
+      font-size: 6.4rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
-      margin-top: 3rem;
+      margin-top: 4rem;
       letter-spacing: 0.2rem;
    }
    
@@ -3396,26 +3397,26 @@ input::-webkit-inner-spin-button {
       color: #FFC1B6;
       letter-spacing: 0.1rem;
       font-weight: 500;
-      font-size: 1.2rem;
-      margin-top: 3.2rem;
-      margin-left: 11.9rem;
+      font-size: 1.6rem;
+      margin-top: 2.5rem;
+      margin-left: 0.88rem;
    }
    
    .history p {
-      font-size: 1.1rem;
-      margin-top: 1.9rem;
-      line-height: 2.8rem;
-      margin-left: 12rem;
+      font-size: 1.2rem;
+      margin-top: 2.2rem;
+      line-height: 3.2rem;
+      margin-left: 0.88rem;
    }
    
    /* Staff section */
    .staff {
       display: flex;
-      flex-direction: unset;
+      flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
       width: 100%;
-      height: 35rem;
+      height: 100%;
       margin-top: 12.5rem;
    }
    
@@ -3423,9 +3424,9 @@ input::-webkit-inner-spin-button {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 77% 23%;
-      width: 21.1rem;
-      height: 32rem;
-      margin-top: 0rem;
+      width: 75%;
+      height: 53rem;
+      margin-top: 6.5rem;
    }
    
    .staff-img {
@@ -3445,17 +3446,17 @@ input::-webkit-inner-spin-button {
    }
    
    .staff-info h1 {
-      font-size: 1.8rem;
+      font-size: 3rem;
       letter-spacing: 0.17rem;
       font-weight: 600;
    }
    
    .staff-info h3 {
-      font-size: 1.2rem;
+      font-size: 1.7rem;
       letter-spacing: 0.17rem;
       font-weight: 300;
       color: #FFA190;
-      margin-top: 0.25rem;
+      margin-top: 2rem;
    }
    
    /* Access section */
@@ -3465,43 +3466,47 @@ input::-webkit-inner-spin-button {
    }
    
    .access-img {
-      width: 51%;
-      height: 30rem;
-      left: auto;
-      margin-left: 5rem;
+      width: 60%;
+      height: 28rem;
+      left: 0%;
+      margin-left: 0rem;
       transform: translateX(0%);
       position: absolute;
       z-index: -1;
    }
    
    .access-rect {
-      width: 53%;
-      height: 27.5rem;
+      width: 80%;
+      height: 25.8rem;
       background: #EFEFEF;
       position: absolute;
       z-index: 1;
-      margin-top: 6.3rem;
-      margin-left: 32rem;
+      margin-top: 9rem;
+      right: 0%;
+      margin-left: 0rem;
       display: none;
    }
    
    .access {
       display: flex;
       flex-direction: column;
-      width: 53%;
-      height: 30rem;
+      justify-content: center;
+      width: 78%;
+      height: 32.9rem;
       padding-left: 3.5rem;
-      margin-left: 32rem;
-      margin-top: 4rem;
+      margin-left: 7.4rem;
+      margin-top: 7.2rem;
       background: #EFEFEF;
+      position: static;
+      right: 0%;
    }
    
    .access h1 {
-      font-size: 4.5rem;
+      font-size: 5.6rem;
       font-family: 'Lobster Two', cursive;
       font-weight: 500;
       color: #462816;
-      margin-top: 3.7rem;
+      margin-top: 0rem;
    }
    
    .access h3 {
@@ -3509,55 +3514,55 @@ input::-webkit-inner-spin-button {
       color: #FFC1B6;
       letter-spacing: 0.1rem;
       font-weight: 500;
-      font-size: 1.2rem;
-      margin-top: 0.9rem;
+      font-size: 1.5rem;
+      margin-top: 1.88rem;
       margin-left: 0.5rem;
    }
    
    .access-open h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       margin-top: 2rem;
       letter-spacing: 0.13rem;
       margin-left: 0.65rem;
    }
    
    .access-open p {
-      font-size: 1.02rem;
+      font-size: 1.2rem;
       margin-left: 0.65rem;
    }
    
    .access-tel h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       margin-top: 1.7rem;
       letter-spacing: 0.13rem; 
       margin-left: 0.65rem;
    }
    
    .access-tel p {
-      font-size: 1.02rem;
+      font-size: 1.2rem;
       margin-left: 0.65rem;
    }
    
    .access-address h2 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
       margin-top: 1.7rem;
       letter-spacing: 0.13rem; 
       margin-left: 0.65rem;
    }
    
    .access-address p {
-      font-size: 1.02rem;
+      font-size: 1.2rem;
       margin-left: 0.65rem;
    }
    
    /* Contact section */
    .section-a7 {
-      margin-top: 10.6rem;
+      margin-top: 15.5rem;
    }
    
    /* Footer section */
    .section-a8 {
-      margin-top: 9rem;
+      margin-top: 13rem;
    }
    
    /* CONTACT US PAGE */
