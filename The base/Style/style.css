@@ -7,6 +7,7 @@
 body {
    font-family: 'Nunito', sans-serif;
    line-height: 2.2rem;
+   overflow-x: hidden;
 }
 
 button {
@@ -1324,6 +1325,24 @@ input::-webkit-inner-spin-button {
       transform: scale(0);
       transition: 400ms;
    }
+
+   .nav-ul li::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0.17rem;
+      background: #FFA190;
+      border-radius: 18px;
+      transform: scale(0);
+      transition: ease 400ms;
+      transform-origin: left;
+   }
+
+   .nav-ul li:hover::after {
+      transform: scale(1);
+   }
    
    .menu-burger li:hover::after {
       transform: scale(1);
@@ -1382,6 +1401,16 @@ input::-webkit-inner-spin-button {
       margin-left: 0.6rem;
       font-size: 1.05rem;
    }
+
+   .lp-button-h {
+      border-radius: 25px;
+      transition: ease 300ms;
+   }
+
+   .lp-button-h2 {
+      border-radius: 0px;
+      transition: ease 0ms;
+   }
    
    .lp-img {
       width: 100%;
@@ -1390,7 +1419,7 @@ input::-webkit-inner-spin-button {
       position: absolute;
       z-index: -2;
    }
-   
+
    /* About us section */
    .about {
       display: flex;
