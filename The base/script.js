@@ -26,8 +26,8 @@ const about = gsap.timeline({
    }
 });
 
-about.from(".about-rect", {x: "-75%", duration: 1, opacity: 0})
-about.from(".about h1, .about h3, .about p, .about-button", {y: "100%", duration: 1, opacity: 0, stagger: 0.1})
+about.from(".about-rect", {x: "-75%", duration: 1, opacity: 0});
+about.from(".about h1, .about h3, .about p, .about-button", {y: "100%", duration: 1, opacity: 0, stagger: 0.1}, "-=0.5");
 
 // What we do section
 const wwd = gsap.timeline({
@@ -37,6 +37,74 @@ const wwd = gsap.timeline({
    }
 });
 
-wwd.from(".wwd-img", {x: "75%", opacity: 0, duration: 1});
-wwd.from(".wwd-rect", {y: "90%", opacity: 0, duration: 1});
-wwd.from(".wwd h1, .wwd h3, .wwd-text1, .wwd-text2", {x: "-75%", opacity: 0, duration: 1, stagger: 0.15});
+wwd.from(".wwd-img", {x: "75%", duration: 1, opacity: 0});
+wwd.from(".wwd-rect", {y: "75%", opacity: 0, duration: 1}, "-=0.4");
+wwd.from(".wwd h1, .wwd h3, .wwd-text1, .wwd-text2", {x: "-75%", opacity: 0, duration: 1, stagger: 0.15}, "-=0.5");
+
+// Menu section
+const menu = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-5",
+      start: "center bottom"
+   }
+});
+
+menu.from(".menu-rect", {x: "85%", duration: 1, opacity: 0});
+menu.from(".menu-img", {x: "-75%", duration: 1, opacity: 0}, "-=1");
+menu.from(".menu h1, .menu h3, .menu p, .menu-button", {y: "75%", duration: 1, opacity: 0, stagger: 0.1});
+
+// Reservation
+const reserv = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-6",
+      start: "center bottom"
+   }
+});
+
+reserv.from(".reserv-img", {y: "75%", duration: 1, opacity: 0});
+reserv.from(".reserv h1, .reserv-button", {x: "-50%", duration: 1, opacity: 0, stagger: 0.15});
+
+// Benefits
+const benefits = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-7",
+      start: "center bottom"
+   }
+});
+
+benefits.from(".benefits", {x: "-80%", duration: 1, opacity: 0});
+benefits.from(".benefits-img", {x: "-80%", duration: 1, opacity: 0});
+benefits.from(".benefits h1, .benefits h3, .benefits p, .benefits-button", {y: "50%", duration: 1, opacity: 0, stagger: 0.15}, "-=0.25");
+
+// Reviews
+const rew = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-8",
+      start: "center bottom"
+   }
+});
+
+rew.from(".reviews-rect", {x: "75%", duration: 1, opacity: 0});
+rew.from(".reviews h1, .reviews h3, .reviews-text, .reviews-sign, .reviews-star img", {y: "75%", duration: 1, opacity: 0, stagger: 0.15});
+
+// Contact us
+const contact = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".section-9",
+      start: "center bottom"
+   }
+});
+
+contact.from(".contact-rect", {x: "-75%", duration: 1, opacity: 0});
+contact.from(".contact h1, .contact h3, .contact input, .contact textarea, .contact button", {y: "75%", duration: 1, opacity: 0, stagger: 0.18});
+
+// Footer
+const footer = gsap.timeline({
+   scrollTrigger: {
+      trigger: ".footer-info",
+      start: "center bottom"
+   }
+});
+
+footer.from(".footer-info h1", {y: "50%", duration: 1, opacity: 0, stagger: 0.25});
+footer.from(".footer-f h1, .go-back", {y: "50%", duration: 1, opacity: 0, stagger: 0.25}, "-=0.5");
