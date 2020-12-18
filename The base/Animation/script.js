@@ -46,7 +46,7 @@ const wwd = gsap.timeline({
 
 wwdImg.from(".wwd-img", {x: "75%", duration: 1, opacity: 0});
 wwd.from(".wwd-rect", {y: "75%", opacity: 0, duration: 1, delay: 0.25});
-wwd.from(".wwd h1, .wwd h3, .wwd-text1, .wwd-text2", {x: "-75%", opacity: 0, duration: 1, stagger: 0.15, delay: 0.20});
+wwd.from(".wwd h1, .wwd h3, .wwd-text1, .wwd-text2", {x: "-75%", opacity: 0, duration: 1, stagger: 0.15, delay: 0.04});
 
 // Menu section
 const menu = gsap.timeline({
