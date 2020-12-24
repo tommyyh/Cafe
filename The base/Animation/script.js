@@ -1,14 +1,14 @@
-function myFunction(x) {
-   if (x.matches) {
-     document.body.style.backgroundColor = "yellow";
-   } else {
-     document.body.style.backgroundColor = "pink";
-   }
-};
+// function myFunction(x) {
+//    if (x.matches) {
+//      document.body.style.backgroundColor = "yellow";
+//    } else {
+//      document.body.style.backgroundColor = "pink";
+//    }
+// };
  
-let x = window.matchMedia("(min-width: 1025px)");
-myFunction(x);
-x.addListener(myFunction);
+// let x = window.matchMedia("(min-width: 1025px)");
+// myFunction(x);
+// x.addListener(myFunction);
 
 // Nav - burger
 let burger = document.querySelector(".burger");
