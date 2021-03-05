@@ -1,0 +1,395 @@
+/* Nav */
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.7rem;
+  box-shadow: 3.3px 0px 8px 1px rgba(0, 0, 0, 0.1);
+  padding-left: 2rem;
+  padding-right: 2.5rem;
+  z-index: 6;
+  background: #fff;
+}
+
+.nav h1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+.burger-line {
+  background: #1b1a1a;
+  width: 1.7rem;
+  height: 0.2rem;
+  border-radius: 1rem;
+}
+
+.burger-line::after,
+.burger-line::before {
+  content: '';
+  position: absolute;
+  background: #1b1a1a;
+  width: 2.3rem;
+  height: 0.2rem;
+  border-radius: 1rem;
+  transition: ease 400ms;
+}
+
+.burger-line::after {
+  transform: translateY(0.6rem);
+}
+
+.burger-line::before {
+  transform: translateY(-0.6rem);
+}
+
+.menu-burger {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #efefef;
+  right: -100%;
+  transition: ease 400ms;
+  z-index: 5;
+}
+
+.menu-burger a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-burger li {
+  display: inline-block;
+  position: relative;
+  margin-top: 2.8rem;
+  font-size: 1.35rem;
+  padding-bottom: 0.3rem;
+}
+
+.menu-burger li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  background: #1b1a1a;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 400ms;
+}
+
+.menu-burger li:hover::after {
+  transform: scale(1);
+}
+
+/* Nav - burger: Animation */
+.openB .burger-line::after {
+  transform: rotate(-45deg);
+}
+
+.openB .burger-line::before {
+  transform: rotate(45deg);
+}
+
+.openB .burger-line {
+  background: transparent;
+}
+
+.openM {
+  right: 0%;
+}
+
+.nav-ul {
+  display: none;
+}
+
+/* LAPTOP VERSION */
+@media screen and (min-width: 1025px) {
+  /* Nav */
+  .nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4.7rem;
+    box-shadow: 3.3px 0px 8px 1px rgba(0, 0, 0, 0.1);
+    padding-left: 4.25rem;
+    padding-right: 1.75rem;
+    z-index: 6;
+    background: #fff;
+  }
+
+  .nav h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+
+  .nav a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .burger {
+    cursor: pointer;
+    display: none;
+  }
+
+  .nav-ul {
+    display: block;
+  }
+
+  .nav-ul li {
+    display: inline-block;
+    margin-right: 2.7rem;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .nav-ul a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .burger-line {
+    background: #1b1a1a;
+    width: 1.7rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+  }
+
+  .burger-line::after,
+  .burger-line::before {
+    content: '';
+    position: absolute;
+    background: #1b1a1a;
+    width: 2.3rem;
+    height: 0.2rem;
+    border-radius: 1rem;
+    transition: ease 400ms;
+  }
+
+  .burger-line::after {
+    transform: translateY(0.6rem);
+  }
+
+  .burger-line::before {
+    transform: translateY(-0.6rem);
+  }
+
+  .menu-burger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
+    right: -100%;
+    transition: ease 400ms;
+    z-index: 5;
+  }
+
+  .menu-burger a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .menu-burger li {
+    display: inline-block;
+    position: relative;
+    margin-top: 2.8rem;
+    font-size: 1.35rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .menu-burger li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background: #1b1a1a;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scale(0);
+    transition: 400ms;
+  }
+
+  .nav-ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 9%;
+    left: 0;
+    width: 100%;
+    height: 1.7px;
+    background: #ffa190;
+    border-radius: 18px;
+    transform: scale(0);
+    transition: ease 400ms;
+    transform-origin: left;
+  }
+
+  .nav-ul li:hover::after {
+    transform: scale(1);
+  }
+
+  .menu-burger li:hover::after {
+    transform: scale(1);
+  }
+
+  /* Nav - burger: Animation */
+  .openB .burger-line::after {
+    transform: rotate(-45deg);
+  }
+
+  .openB .burger-line::before {
+    transform: rotate(45deg);
+  }
+
+  .openB .burger-line {
+    background: transparent;
+  }
+
+  .openM {
+    right: 0%;
+  }
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Nav */
+  .nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6.6rem;
+    box-shadow: 3.3px 0px 8px 1px rgba(0, 0, 0, 0.1);
+    padding-left: 3.6rem;
+    padding-right: 3.6rem;
+    z-index: 6;
+    background: #fff;
+  }
+
+  .nav h1 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .nav a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .burger {
+    cursor: pointer;
+  }
+
+  .burger-line {
+    background: #1b1a1a;
+    width: 2.6rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+  }
+
+  .burger-line::after,
+  .burger-line::before {
+    content: '';
+    position: absolute;
+    background: #1b1a1a;
+    width: 3.5rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+    transition: ease 400ms;
+  }
+
+  .burger-line::after {
+    transform: translateY(0.8rem);
+  }
+
+  .burger-line::before {
+    transform: translateY(-0.8rem);
+  }
+
+  .menu-burger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: #efefef;
+    right: -100%;
+    transition: ease 400ms;
+    z-index: 5;
+  }
+
+  .menu-burger a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .menu-burger li {
+    display: inline-block;
+    position: relative;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .menu-burger li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background: #1b1a1a;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+    transform: scale(0);
+    transition: 400ms;
+  }
+
+  .menu-burger li:hover::after {
+    transform: scale(1);
+  }
+
+  /* Nav - burger: Animation */
+  .openB .burger-line::after {
+    transform: rotate(-45deg);
+  }
+
+  .openB .burger-line::before {
+    transform: rotate(45deg);
+  }
+
+  .openB .burger-line {
+    background: transparent;
+  }
+
+  .openM {
+    right: 0%;
+  }
+}
