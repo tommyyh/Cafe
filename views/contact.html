@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/contact.css" />
+    <title>Beanery - Contact</title>
+  </head>
+  <body>
+    <div class="c-cont">
+      <div class="section-c1" id="section-c1">
+        <header>
+          <nav>
+            <div class="nav">
+              <a href="/"><h1>Beanery</h1></a>
+              <ul class="nav-ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/reservation">Reservation</a></li>
+                <li><a href="#section-c1">Contact</a></li>
+              </ul>
+              <div class="burger">
+                <div class="burger-line"></div>
+              </div>
+            </div>
+            <div class="menu-burger">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/reservation">Reservation</a></li>
+              <li><a href="#section-c1">Contact</a></li>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <div class="section-c2" id="section-c2">
+        <div class="c-lp">
+          <h1>Contact Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            eveniet tempora doloribus ab ratione illo?
+          </p>
+          <img src="/img/svg/scroll.svg" alt="a scroll icon" class="c-scroll" />
+        </div>
+        <img src="/img/png/cafe-c1-min.png" alt="a cafe" class="c-lp-img" />
+      </div>
+      <div class="section-c3" id="section-c3">
+        <div class="contact-rect"></div>
+        <div class="contact">
+          <form action="/contact" method="POST" id="contact-form">
+            <h1>Contact Us</h1>
+            <h3>-get in touch-</h3>
+            <input
+              type="text"
+              name="name"
+              id="c-name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="c-email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              name="msg"
+              id="c-msg"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div>
+              <button type="submit" class="c-button">SEND MESSAGE</button>
+            </div>
+          </form>
+        </div>
+        <div class="socials">
+          <img src="/img/svg/Vector-2.svg" alt="a facebook icon" class="c-fb" />
+          <img
+            src="/img/svg/Vector.svg"
+            alt="a twitter icon"
+            class="c-twitter"
+          />
+          <img
+            src="/img/svg/Vector-1.svg"
+            alt="an instagram icon"
+            class="c-ig"
+          />
+        </div>
+      </div>
+      <div class="section-c4" id="section-c4">
+        <div class="footer">
+          <div class="footer-info">
+            <h1 class="f-address">Address: 115, Gough st, bd21 h1p</h1>
+            <h1 class="f-email">beanerycafe@gmail.com</h1>
+            <h1 class="f-phone">0800 214 5252</h1>
+          </div>
+          <div class="footer-f">
+            <div class="go-back">
+              <img src="/img/svg/go-back.svg" alt="an arrow" class="go-back1" />
+              <a href="#section-c1"><h1 class="go-back2">Go Back</h1></a>
+            </div>
+            <h1 class="f-img">Images from Pexels/Unsplashed</h1>
+            <h1 class="f-icon">Icons from fontwasome</h1>
+            <h1 class="f-copy">© Beanery 2020</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="/javascripts/contact.js"></script>
+  </body>
+</html>

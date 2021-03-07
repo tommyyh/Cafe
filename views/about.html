@@ -8,16 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Nunito&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Style/about.css" />
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-    ></script>
-    <script defer src="./javascripts/about.js"></script>
+    <link rel="stylesheet" href="/style/about.css" />
     <title>Beanery - About</title>
   </head>
   <body>
@@ -26,24 +17,24 @@
         <header>
           <nav>
             <div class="nav">
-              <a href="./index.html"><h1>Beanery</h1></a>
+              <a href="/"><h1>Beanery</h1></a>
               <ul class="nav-ul">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#section-a2">About</a></li>
+                <li><a href="/reservation">Reservation</a></li>
                 <li><a href="#section-a6">Access</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
               <div class="burger">
                 <div class="burger-line"></div>
               </div>
             </div>
             <div class="menu-burger">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="./reservation.html">Reservation</a></li>
-              <li><a href="#section-5">Menu</a></li>
-              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#section-a2">About</a></li>
+              <li><a href="/reservation">Reservation</a></li>
+              <li><a href="#section-a6">Access</a></li>
+              <li><a href="/contact">Contact</a></li>
             </div>
           </nav>
         </header>
@@ -55,16 +46,12 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
             eveniet tempora doloribus ab ratione illo?
           </p>
-          <img
-            src="./Images/Svg/scroll.svg"
-            alt="a scroll icon"
-            class="a-scroll"
-          />
+          <img src="/img/svg/scroll.svg" alt="a scroll icon" class="a-scroll" />
         </div>
       </div>
       <div class="section-a3" , id="section-a3">
         <img
-          src="./Images/Png/cafe-a1-min.png"
+          src="/img/png/cafe-a1-min.png"
           alt="a cafe"
           class="history-img-d"
         />
@@ -85,11 +72,7 @@
       <div class="section-a4" , id="section-a4">
         <div class="history-rect"></div>
         <div class="history-rect-d"></div>
-        <img
-          src="./Images/Png/cafe-a1-min.png"
-          alt="a cafe"
-          class="history-img"
-        />
+        <img src="/img/png/cafe-a1-min.png" alt="a cafe" class="history-img" />
         <div class="history">
           <h1>History</h1>
           <h3>-our past-</h3>
@@ -104,7 +87,7 @@
         <div class="staff">
           <div class="staff-slope">
             <img
-              src="./Images/Png/staff1-min.png"
+              src="/img/png/staff1-min.png"
               alt="a person"
               class="staff-img"
             />
@@ -115,7 +98,7 @@
           </div>
           <div class="staff-slope">
             <img
-              src="./Images/Png/staff2-min.png"
+              src="/img/png/staff2-min.png"
               alt="a person"
               class="staff-img"
             />
@@ -126,7 +109,7 @@
           </div>
           <div class="staff-slope">
             <img
-              src="./Images/Png/staff3-min.png"
+              src="/img/png/staff3-min.png"
               alt="a person"
               class="staff-img"
             />
@@ -138,71 +121,47 @@
         </div>
       </div>
       <div class="section-a6" , id="section-a6">
-        <div class="access-rect"></div>
-        <img
-          src="./Images/Png/cafe-a2-min.png"
-          alt="a cafe"
-          class="access-img"
-        />
-        <div class="access">
-          <h1>Access</h1>
-          <h3>-when we open-</h3>
-          <div class="access-open">
-            <h2>Open</h2>
-            <p>Mon-Sun: 6am - 10pm</p>
-          </div>
-          <div class="access-tel">
-            <h2>Tel</h2>
-            <p>0800 214 5252</p>
-          </div>
-          <div class="access-address">
-            <h2>Address</h2>
-            <p>115, Gough st, bd21 h1p</p>
-          </div>
-        </div>
-      </div>
-      <div class="section-a7" , id="section-a7">
         <div class="contact-rect"></div>
         <div class="contact">
-          <h1>Contact Us</h1>
-          <h3>-get in touch-</h3>
-          <input
-            type="text"
-            name="name"
-            id="c-name"
-            placeholder="Full Name"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            id="c-email"
-            placeholder="Email Address"
-            required
-          />
-          <textarea
-            name="msg"
-            id="c-msg"
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-            required
-          ></textarea>
-          <button type="submit" class="c-button">SEND MESSAGE</button>
+          <form action="/about" method="POST" id="contact-form">
+            <h1>Contact Us</h1>
+            <h3>-get in touch-</h3>
+            <input
+              type="text"
+              name="name"
+              id="c-name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="c-email"
+              placeholder="Email Address"
+              required
+            />
+            <textarea
+              name="msg"
+              id="c-msg"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div>
+              <button type="submit" class="c-button">SEND MESSAGE</button>
+            </div>
+          </form>
         </div>
         <div class="socials">
+          <img src="/img/svg/Vector-2.svg" alt="a facebook icon" class="c-fb" />
           <img
-            src="./Images/Svg/Vector-2.svg"
-            alt="a facebook icon"
-            class="c-fb"
-          />
-          <img
-            src="./Images/Svg/Vector.svg"
+            src="/img/svg/Vector.svg"
             alt="a twitter icon"
             class="c-twitter"
           />
           <img
-            src="./Images/Svg/Vector-1.svg"
+            src="/img/svg/Vector-1.svg"
             alt="an instagram icon"
             class="c-ig"
           />
@@ -217,11 +176,7 @@
           </div>
           <div class="footer-f">
             <div class="go-back">
-              <img
-                src="./Images/Svg/go-back.svg"
-                alt="an arrow"
-                class="go-back1"
-              />
+              <img src="/img/svg/go-back.svg" alt="an arrow" class="go-back1" />
               <a href="#section-a1"><h1 class="go-back2">Go Back</h1></a>
             </div>
             <h1 class="f-img">Images from Pexels/Unsplashed</h1>
@@ -231,5 +186,8 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="/javascripts/about.js"></script>
   </body>
 </html>

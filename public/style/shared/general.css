@@ -11,12 +11,12 @@ body {
 button {
   outline: none;
   cursor: pointer;
-  transition: ease 300ms;
+  transition: 0.8s background ease-out;
 }
 
 button:hover {
-  background: #ffc1b6;
-  border: 1px #ffc1b6 solid;
+  background: #ffb8ac;
+  border: 1px #ffb8ac solid;
 }
 
 textarea {
@@ -39,12 +39,12 @@ input::-webkit-inner-spin-button {
   button {
     outline: none;
     cursor: pointer;
-    transition: ease 300ms;
+    transition: 400 background ease-out;
   }
 
   button:hover {
-    background: #ffc1b6;
-    border: 1px #ffc1b6 solid;
+    background: #ffb8ac;
+    border: 1px #ffb8ac solid;
   }
 
   textarea {

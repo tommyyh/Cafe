@@ -1,8 +1,8 @@
-@import './shared/reset.css';
-@import './shared/general.css';
-@import './shared/header.css';
-@import './shared/contact_forms.css';
-@import './shared/footer.css';
+@import '/style/shared/reset.css';
+@import '/style/shared/general.css';
+@import '/style/shared/header.css';
+@import '/style/shared/contact_forms.css';
+@import '/style/shared/footer.css';
 
 /* Landing page section */
 .c-lp {
@@ -86,7 +86,7 @@
   .c-lp-img {
     object-fit: cover;
     width: 100%;
-    height: 18rem;
+    height: 43vh;
   }
 
   /* Contact section */

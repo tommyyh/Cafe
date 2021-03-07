@@ -5,7 +5,7 @@
 
 .contact-rect {
   width: 100%;
-  height: 41rem;
+  height: 110vh;
   background: #f5f4f4;
   position: absolute;
   z-index: -1;
@@ -115,26 +115,26 @@
 /* LAPTOP VERSION */
 @media screen and (min-width: 1025px) {
   /* Contact section */
-  .section-9 {
+  .section-8 {
     margin-top: 11rem;
   }
 
   .contact-rect {
     width: 42%;
-    height: 42.8rem;
+    height: 104vh;
     background: #f5f4f4;
     position: absolute;
     z-index: -1;
     margin-top: 0rem;
   }
 
-  .contact {
+  #contact-form {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     justify-content: center;
     width: 100%;
-    height: 41rem;
+    height: 100vh;
     padding-left: 5rem;
   }
 
@@ -159,7 +159,7 @@
 
   #c-name {
     width: 63%;
-    height: 3.5rem;
+    height: 8.83vh;
     border: 1.4px rgb(36, 35, 35) solid;
     margin-top: 2.5rem;
     padding-left: 1.4rem;
@@ -177,7 +177,7 @@
 
   #c-email {
     width: 63%;
-    height: 3.5rem;
+    height: 8.83vh;
     border: 1.4px rgb(36, 35, 35) solid;
     margin-top: 1.23rem;
     padding-left: 1.4rem;
@@ -195,7 +195,7 @@
 
   #c-msg {
     width: 63%;
-    height: 8rem;
+    height: 19vh;
     border: 1.4px rgb(36, 35, 35) solid;
     margin-top: 1.23rem;
     padding-left: 1.4rem;

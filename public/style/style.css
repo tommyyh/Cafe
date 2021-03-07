@@ -1,8 +1,8 @@
-@import './shared/reset.css';
-@import './shared/general.css';
-@import './shared/header.css';
-@import './shared/contact_forms.css';
-@import './shared/footer.css';
+@import '/style/shared/reset.css';
+@import '/style/shared/general.css';
+@import '/style/shared/header.css';
+@import '/style/shared/contact_forms.css';
+@import '/style/shared/footer.css';
 
 /* Landing page */
 .lp {
@@ -428,7 +428,7 @@
 
   .lp-img {
     width: 100%;
-    height: auto;
+    height: 68vh;
     object-fit: cover;
     position: absolute;
     z-index: -2;
@@ -486,7 +486,7 @@
 
   .about-rect {
     width: 31.4rem;
-    height: 28rem;
+    height: 69vh;
     background: #efefef;
     position: absolute;
     z-index: -1;
@@ -510,7 +510,7 @@
 
   .wwd-img {
     width: 50%;
-    height: 26rem;
+    height: 65vh;
     object-fit: cover;
     right: 0%;
     transform: translate(-0%);
@@ -520,7 +520,7 @@
 
   .wwd-rect {
     width: 46%;
-    height: 52.5rem;
+    height: 129.5vh;
     background: #efefef;
     position: absolute;
     z-index: -1;
@@ -568,7 +568,7 @@
 
   .menu-img {
     width: 40%;
-    height: 24rem;
+    height: 60vh;
     object-fit: cover;
     left: 0%;
     transform: translate(0%);
@@ -578,7 +578,7 @@
 
   .menu-rect {
     width: 58%;
-    height: 25.5rem;
+    height: 62.25vh;
     background: #efefef;
     position: absolute;
     margin-top: 7.8rem;
@@ -644,7 +644,7 @@
 
   .reserv-img {
     width: 56%;
-    height: 28rem;
+    height: 67.65vh;
     position: absolute;
     right: 7%;
     object-fit: cover;
@@ -689,7 +689,7 @@
     flex-direction: column;
     justify-content: center;
     width: 70%;
-    height: 34rem;
+    height: 82vh;
     padding-left: 4.5rem;
     padding-right: 24rem;
     background: #efefef;
@@ -697,7 +697,7 @@
 
   .benefits-img {
     width: 52%;
-    height: 30rem;
+    height: 70.25vh;
     left: auto;
     transform: translateX(0%);
     position: absolute;
@@ -762,7 +762,7 @@
 
   .reviews-rect {
     width: 80%;
-    height: 25.7rem;
+    height: 63vh;
     background: #efefef;
     position: absolute;
     right: 0%;

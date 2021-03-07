@@ -1,5 +1,4 @@
 const cont = () => {
-  // Wraps all the code
   // Nav - burger
   let burger = document.querySelector('.burger');
   let burgerMenu = document.querySelector('.menu-burger');
